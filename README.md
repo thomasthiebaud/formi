@@ -75,7 +75,30 @@ Formi(
 )
 ```
 
-### 3. Create more components to fit your needs
+### 3. Add custom validators
+
+A validator is a function that takes the field value and the form state and returns:
+- a `String` if there is an error
+- `null` otherwise
+
+```
+FormiValidator<T> required<T>(
+  BuildContext context, {
+  String? errorText,
+}) {
+  return (value, state) {
+    if (value == null ||
+        (value is String && value.isEmpty) ||
+        (value is Iterable && value.isEmpty) ||
+        (value is Map && value.isEmpty)) {
+      return errorText ?? 'This field cannot be empty.';
+    }
+    return null;
+  };
+}
+```
+
+### 4. Create more components to fit your needs
 
 For example the submit button could be written as
 
