@@ -46,7 +46,7 @@ class FormiFieldState<W extends FormiField<T>, T> extends FormFieldState<T> {
 
     final containsValue = _formiState.initialValue?.containsKey(widget.name);
     if (containsValue != null && containsValue) {
-      return _formiState.initialValue?[widget.name] as T;
+      return _formiState.initialValue?[widget.name] as T?;
     }
 
     return null;
