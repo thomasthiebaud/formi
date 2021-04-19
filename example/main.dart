@@ -84,7 +84,7 @@ void main() {
                     onPressed: () {
                       formiState.save();
                       if (formiState.validate()) {
-                        // Do something
+                        // Retrieve the form state with formiState.value
                       }
                     },
                     child: Text('Submit'),

@@ -4,7 +4,9 @@ A minimalist form builder, with null safetty and no dependencies. Inspired by ht
 
 ## Getting Started
 
-`formi` does not include UI components but it will help you to build yours so you have **full control**. 
+`formi` does not include UI components but it will help you to build yours so you have **full control**.
+
+You can check the **example** folder that contains some components to get you started.
 
 ### 1. Create a widget that extends FormiField
 
@@ -66,7 +68,7 @@ Formi(
                 final formiState = Formi.of(context);
                 formiState.save();
                 if (formiState.validate()) {
-                    // Do something
+                    // Retrieve the form state with formiState.value
                 }
             }
         ),
@@ -114,4 +116,3 @@ class FormiSubmit extends StatelessWidget {
   }
 }
 ```
-

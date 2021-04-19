@@ -1,6 +1,6 @@
 name: formi
 description: A minimalist form builder, with null safetty and no dependencies
-version: 0.0.2
+version: 0.1.0
 repository: https://github.com/thomasthiebaud/formi
 
 environment:
