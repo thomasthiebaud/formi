@@ -1,6 +1,6 @@
 # formi
 
-A minimalist form builder, with null safetty and no dependencies. Inspired by https://pub.dev/packages/flutter_form_builder.
+A minimalist form builder, with null safety and no dependency. Inspired by https://pub.dev/packages/flutter_form_builder.
 
 ## Getting Started
 
